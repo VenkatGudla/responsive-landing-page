@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>::Landing page::</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: #111;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* Hero */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 60px 20px;
+    }
+    
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  
+  .hero {
+    flex-direction: row;
+  }
+}
+/* Desktop only */
+@media (min-width: 1200px) {
+  .hero{
+        padding: 0px 20px;
+  }
+  .hero-img img{
+    max-width: 300px;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <h2>SmartWatch</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Buy</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>SmartWatch Pro</h1>
+      <p>Track your fitness, calls, and notifications in one place.</p>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+    <div class="hero-img">
+      <img src="images/smart-watch.jpg" alt="watch">
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <h2>Features</h2>
+    <div class="feature-box">
+      <h3>Heart Rate</h3>
+      <p>Monitor your health 24/7</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>Notifications</h3>
+      <p>Get alerts instantly</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>Long Battery</h3>
+      <p>Lasts up to 7 days</p>
+    </div>
+  </section>
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Get Yours Today</h2>
+    <p>Limited time offer</p>
+    <a href="#" class="btn">Order Now</a>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 SmartWatch</p>
+  </footer>
+</body>
+</html>
